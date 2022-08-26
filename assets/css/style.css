@@ -19,7 +19,7 @@
 
 .sticky_Nav {
   position: fixed;
-  z-index: 9999;
+  z-index: 333;
   top: 3vh;
   width: 90%;
   left: 5%;
@@ -100,7 +100,7 @@
 .s-vh-100 {
   height: 100vh;
 }
-@media (max-width: 820px) {
+@media (max-width: 450px) {
   .s-vh-100 {
     height: 80vh;
   }
@@ -136,12 +136,19 @@
   width: 50%;
 }
 
+.videoModal {
+  z-index: 9999999;
+  position: relative;
+}
+
 .aboutUs {
   width: 100vw;
   margin-top: 50vh;
   padding: 1rem;
   background-color: rgba(128, 203, 195, 0.5019607843);
   border-radius: 40px;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 @media (max-width: 820px) {
   .aboutUs {
@@ -229,7 +236,7 @@
 .swiper_btns .swiper_button img {
   width: 70%;
 }
-@media (max-width: 450px) {
+@media (max-width: 820px) {
   .swiper_btns .swiper_button img {
     width: auto;
   }
@@ -288,7 +295,9 @@
   margin-left: 1.5vw;
   margin-right: 1.5vw;
   margin-top: 1rem;
-  background-color: #009688;
+  background-color: rgba(0, 121, 107, 0.7960784314);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   padding: 1.5rem;
 }
 @media (max-width: 820px) {
@@ -520,6 +529,8 @@
 
 .New_request {
   background-color: rgba(128, 203, 195, 0.7137254902);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 
 .form_container {
@@ -682,6 +693,7 @@ footer .mail img {
 body {
   overflow-x: hidden;
   background-color: #001913 !important;
+  position: relative;
 }
 
 button {
@@ -715,4 +727,459 @@ button {
   .w-md-75 {
     width: 75% !important;
   }
+}
+
+.dotts {
+  position: relative;
+  width: 100vw;
+  left: 0px;
+  z-index: -1;
+}
+.dotts .dot {
+  margin: 10rem;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  position: absolute;
+  z-index: -1;
+  background-color: #b2dfdb;
+}
+@-webkit-keyframes drop-waterfall-img {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg) scale(1);
+  }
+  20% {
+    transform: translate(73px, -1px) rotate(36deg) scale(0.9);
+  }
+  40% {
+    transform: translate(141px, 72px) rotate(72deg) scale(1);
+  }
+  60% {
+    transform: translate(83px, 122px) rotate(108deg) scale(1.2);
+  }
+  80% {
+    transform: translate(-40px, 72px) rotate(144deg) scale(1.1);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg) scale(1);
+  }
+}
+@keyframes drop-waterfall-img {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg) scale(1);
+  }
+  20% {
+    transform: translate(73px, -1px) rotate(36deg) scale(0.9);
+  }
+  40% {
+    transform: translate(141px, 72px) rotate(72deg) scale(1);
+  }
+  60% {
+    transform: translate(83px, 122px) rotate(108deg) scale(1.2);
+  }
+  80% {
+    transform: translate(-40px, 72px) rotate(144deg) scale(1.1);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg) scale(1);
+  }
+}
+.dotts .dot:nth-child(1) {
+  right: 9vw;
+  top: 222vh;
+  opacity: 84%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+}
+.dotts .dot:nth-child(2) {
+  right: 10vw;
+  top: 529vh;
+  opacity: 51%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 23s;
+          animation-duration: 23s;
+}
+.dotts .dot:nth-child(3) {
+  right: 13vw;
+  top: 566vh;
+  opacity: 63%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+}
+.dotts .dot:nth-child(4) {
+  right: 4vw;
+  top: 50vh;
+  opacity: 92%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 25s;
+          animation-duration: 25s;
+}
+.dotts .dot:nth-child(5) {
+  right: 12vw;
+  top: 212vh;
+  opacity: 81%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 16s;
+          animation-duration: 16s;
+}
+.dotts .dot:nth-child(6) {
+  right: 12vw;
+  top: 90vh;
+  opacity: 82%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 14s;
+          animation-duration: 14s;
+}
+.dotts .dot:nth-child(7) {
+  right: 14vw;
+  top: 360vh;
+  opacity: 34%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 11s;
+          animation-duration: 11s;
+}
+.dotts .dot:nth-child(8) {
+  right: 1vw;
+  top: 326vh;
+  opacity: 74%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 21s;
+          animation-duration: 21s;
+}
+.dotts .dot:nth-child(9) {
+  right: 10vw;
+  top: 211vh;
+  opacity: 4%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+}
+.dotts .dot:nth-child(10) {
+  right: 5vw;
+  top: 40vh;
+  opacity: 23%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 21s;
+          animation-duration: 21s;
+}
+.dotts .dot:nth-child(11) {
+  right: 8vw;
+  top: 109vh;
+  opacity: 92%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+}
+.dotts .dot:nth-child(12) {
+  right: 4vw;
+  top: 195vh;
+  opacity: 61%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 23s;
+          animation-duration: 23s;
+}
+.dotts .dot:nth-child(13) {
+  right: 3vw;
+  top: 254vh;
+  opacity: 95%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 13s;
+          animation-duration: 13s;
+}
+.dotts .dot:nth-child(14) {
+  right: 13vw;
+  top: 267vh;
+  opacity: 15%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 19s;
+          animation-duration: 19s;
+}
+.dotts .dot:nth-child(15) {
+  right: 9vw;
+  top: 515vh;
+  opacity: 25%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 23s;
+          animation-duration: 23s;
+}
+.dotts .dot:nth-child(16) {
+  left: -29vw;
+  top: 365vh;
+  opacity: 12%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 19s;
+          animation-duration: 19s;
+}
+.dotts .dot:nth-child(17) {
+  left: -22vw;
+  top: 438vh;
+  opacity: 72%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 22s;
+          animation-duration: 22s;
+}
+.dotts .dot:nth-child(18) {
+  left: -23vw;
+  top: 620vh;
+  opacity: 54%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 24s;
+          animation-duration: 24s;
+}
+.dotts .dot:nth-child(19) {
+  left: -22vw;
+  top: 563vh;
+  opacity: 88%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 18s;
+          animation-duration: 18s;
+}
+.dotts .dot:nth-child(20) {
+  left: -12vw;
+  top: 227vh;
+  opacity: 26%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 13s;
+          animation-duration: 13s;
+}
+.dotts .dot:nth-child(21) {
+  left: -22vw;
+  top: 477vh;
+  opacity: 50%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+}
+.dotts .dot:nth-child(22) {
+  left: -14vw;
+  top: 633vh;
+  opacity: 44%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 13s;
+          animation-duration: 13s;
+}
+.dotts .dot:nth-child(23) {
+  left: -16vw;
+  top: 605vh;
+  opacity: 63%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+}
+.dotts .dot:nth-child(24) {
+  left: -17vw;
+  top: 567vh;
+  opacity: 61%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 11s;
+          animation-duration: 11s;
+}
+.dotts .dot:nth-child(25) {
+  left: -12vw;
+  top: 245vh;
+  opacity: 48%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 18s;
+          animation-duration: 18s;
+}
+.dotts .dot:nth-child(26) {
+  left: -29vw;
+  top: 308vh;
+  opacity: 13%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+.dotts .dot:nth-child(27) {
+  left: -26vw;
+  top: 100vh;
+  opacity: 43%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s;
+}
+.dotts .dot:nth-child(28) {
+  left: -23vw;
+  top: 137vh;
+  opacity: 51%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 16s;
+          animation-duration: 16s;
+}
+.dotts .dot:nth-child(29) {
+  left: -20vw;
+  top: 271vh;
+  opacity: 21%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 16s;
+          animation-duration: 16s;
+}
+.dotts .dot:nth-child(30) {
+  left: -11vw;
+  top: 175vh;
+  opacity: 57%;
+  -webkit-animation: "drop-waterfall-img" linear forwards infinite;
+          animation: "drop-waterfall-img" linear forwards infinite;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+}
+
+.rtl .Header_img {
+  right: auto;
+  left: 0px;
+}
+.rtl .aboutUs_Swiper {
+  right: -10vw;
+  left: initial;
+}
+.rtl .dotts .dot:nth-child(16) {
+  left: auto;
+  right: -22vw;
+}
+.rtl .dotts .dot:nth-child(17) {
+  left: auto;
+  right: -22vw;
+}
+.rtl .dotts .dot:nth-child(18) {
+  left: auto;
+  right: -22vw;
+}
+.rtl .dotts .dot:nth-child(19) {
+  left: auto;
+  right: -29vw;
+}
+.rtl .dotts .dot:nth-child(20) {
+  left: auto;
+  right: -12vw;
+}
+.rtl .dotts .dot:nth-child(21) {
+  left: auto;
+  right: -28vw;
+}
+.rtl .dotts .dot:nth-child(22) {
+  left: auto;
+  right: -27vw;
+}
+.rtl .dotts .dot:nth-child(23) {
+  left: auto;
+  right: -23vw;
+}
+.rtl .dotts .dot:nth-child(24) {
+  left: auto;
+  right: -23vw;
+}
+.rtl .dotts .dot:nth-child(25) {
+  left: auto;
+  right: -13vw;
+}
+.rtl .dotts .dot:nth-child(26) {
+  left: auto;
+  right: -16vw;
+}
+.rtl .dotts .dot:nth-child(27) {
+  left: auto;
+  right: -20vw;
+}
+.rtl .dotts .dot:nth-child(28) {
+  left: auto;
+  right: -25vw;
+}
+.rtl .dotts .dot:nth-child(29) {
+  left: auto;
+  right: -21vw;
+}
+.rtl .dotts .dot:nth-child(30) {
+  left: auto;
+  right: -29vw;
+}
+.rtl .dotts .dot:nth-child(1) {
+  right: auto;
+  left: 7vw;
+}
+.rtl .dotts .dot:nth-child(2) {
+  right: auto;
+  left: 5vw;
+}
+.rtl .dotts .dot:nth-child(3) {
+  right: auto;
+  left: 3vw;
+}
+.rtl .dotts .dot:nth-child(4) {
+  right: auto;
+  left: 7vw;
+}
+.rtl .dotts .dot:nth-child(5) {
+  right: auto;
+  left: 7vw;
+}
+.rtl .dotts .dot:nth-child(6) {
+  right: auto;
+  left: 14vw;
+}
+.rtl .dotts .dot:nth-child(7) {
+  right: auto;
+  left: 9vw;
+}
+.rtl .dotts .dot:nth-child(8) {
+  right: auto;
+  left: 13vw;
+}
+.rtl .dotts .dot:nth-child(9) {
+  right: auto;
+  left: 14vw;
+}
+.rtl .dotts .dot:nth-child(10) {
+  right: auto;
+  left: 1vw;
+}
+.rtl .dotts .dot:nth-child(11) {
+  right: auto;
+  left: 10vw;
+}
+.rtl .dotts .dot:nth-child(12) {
+  right: auto;
+  left: 1vw;
+}
+.rtl .dotts .dot:nth-child(13) {
+  right: auto;
+  left: 5vw;
+}
+.rtl .dotts .dot:nth-child(14) {
+  right: auto;
+  left: 1vw;
+}
+.rtl .dotts .dot:nth-child(15) {
+  right: auto;
+  left: 10vw;
 }/*# sourceMappingURL=style.css.map */

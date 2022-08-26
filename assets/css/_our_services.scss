@@ -39,7 +39,8 @@
     margin-left: 1.5vw;
     margin-right: 1.5vw;
     margin-top: 1rem;
-    background-color: $green_500;
+    background-color: #00796bcb;
+    backdrop-filter: blur(3px);
     padding: 1.5rem;
     &_text {
       color: #e0f2f1b4;
@@ -229,4 +230,5 @@
 }
 .New_request {
   background-color: #80cbc3b6;
+  backdrop-filter: blur(2px);
 }

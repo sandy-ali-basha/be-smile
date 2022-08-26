@@ -4,6 +4,8 @@
   padding: 1rem;
   background-color: #80cbc380;
   border-radius: 40px;
+  backdrop-filter: blur(2px);
+
   @include media("<=tablet") {
     margin-top: 10vh;
   }
@@ -87,7 +89,7 @@
     }
     img {
       width: 70%;
-      @include media("<=phone") {
+      @include media("<=tablet") {
         width: auto;
       }
     }

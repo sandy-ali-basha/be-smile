@@ -14,6 +14,10 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
       rel="shortcut icon"
       href="./assets/images/logo-no-title.png"
       type="image/x-icon"
@@ -26,8 +30,11 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>be smile</title>
   </head>
-  <body>
+  <body dir="ltr" class="">
     <main class="container">
+      <!-- dots  -->
+      <div class="dotts"></div>
+      <!-- navbar  -->
       <div class="sticky_Nav">
         <nav class="navbar navbar-expand-md">
           <div class="container-fluid">
@@ -50,10 +57,18 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" aria-current="page" href="./index.html"
+                    >Home</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#partner">our Partner</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a
@@ -63,50 +78,73 @@
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Dropdown
+                    Language
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item arabic">Arabic</a>
                     </li>
-                    <li><hr class="dropdown-divider" /></li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item english">English</a>
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled">Disabled</a>
-                </li>
               </ul>
-              <a href="#" class="rounded-pill btn-outline-light btn mx-2"
-                >Make an apoitment</a
+              <a
+                href="#Appointment"
+                class="rounded-pill btn-outline-light btn mx-2"
+                >Make an Appointment</a
               >
-              <button
+              <a
+                href="./contact-us.html"
                 class="btn rounded-pill mx-2 contact_us_btn"
                 type="submit"
               >
                 Contact Us
-              </button>
+              </a>
             </div>
           </div>
         </nav>
       </div>
-
+      <!-- content  -->
       <div class="row header s-vh-100">
         <div class="col-md-6 header_text">
-          <h1>Smart insurance for your better family life.</h1>
+          <h1>التأمين الذكي لحياة اكثر صحة</h1>
           <p class="text-muted">
-            We speak your mother language Perfect service, affordable prices and
-            exceptional performance We advise independently and free of charge
-            on the subject of supplementary dental insurance.
+            نحن نتحدث لغتك الأم <br />
+            خدمة مثالية وأسعار معقولة وأداء استثنائي <br />
+            ننصح بشكل مستقل ومجاني في موضوع تأمين الأسنان التكميلي.
           </p>
           <div class="play_container">
-            <button class="play_btn">
+            <button
+              class="play_btn"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
               <img src="./assets/images/Play_Icon.png" alt="" />
             </button>
             <div class="play_title">watch a video intro</div>
+          </div>
+        </div>
+        <!-- Button trigger modal -->
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl videoModal">
+            <div class="modal-content">
+              <video controls>
+                <source src="./assets/video/arabic.mp4" type="video/mp4" />
+
+                Your browser does not support HTML video.
+              </video>
+            </div>
           </div>
         </div>
         <div class="col-md-6">
@@ -115,7 +153,7 @@
       </div>
     </main>
     <!-- //   about us // -->
-    <section class="aboutUs mb-5 py-5 container">
+    <section id="about" class="aboutUs mb-5 py-5 container">
       <h1 class="aboutUs_h1">
         <span class="text_green">About</span>
         <span>Us</span>
@@ -125,15 +163,10 @@
         <div class="swiper-wrapper vw-100">
           <div class="swiper-slide about_us_swiper_slide">
             <div class="about_us_slide p-4">
-              <h4 class="about_us_slide_h4">Insurance Made Simple for You</h4>
+              <h4 class="about_us_slide_h4">التأمين كما يجب أن يكون</h4>
               <div class="about_us_slide_text">
-                There’s no other program that walks you through exactly what you
-                need to know to start an online store fast, written by someone
-                who has built several 7-figure ecommerce businesses from
-                scratcThere’s no other program that walks you through exactly
-                what you need to know to start an online store fast, written by
-                someone who has built several 7-figure ecommerce businesses from
-                scratch. h.
+                نحن نتحدث لغتك الأم خدمة مثالية وأسعار معقولة وأداء استثنائي
+                ننصح بشكل مستقل ومجاني في موضوع تأمين الأسنان التكميلي.
               </div>
             </div>
           </div>
@@ -209,7 +242,7 @@
       </div>
     </section>
     <!-- // our services // -->
-    <section class="what_we_do container mt-5">
+    <section id="Services" class="what_we_do container mt-5">
       <div class="our_services_title">what we do</div>
       <h1 class="aboutUs_h1 text-center">
         <span class="text_green">Our</span>
@@ -218,6 +251,68 @@
       </h1>
       <div class="our_services_cards mt-5">
         <div class="card_container">
+          <div class="our_services_card">
+            <div class="our_services_card_img">
+              <img
+                src="./assets/images/pexels-karolina-grabowska-6627281.jpg"
+                alt=""
+              />
+            </div>
+            <h5 class="our_services_card_title">Health plans</h5>
+            <div
+              class="d-inline-flex align-items-start w-100 justify-content-between"
+            >
+              <div class="our_services_card_text">
+                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+                consectetur.
+              </div>
+              <button class="our_services_card_btn">
+                <img src="./assets/images/Icon feather-arrow-left.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="our_services_card">
+            <div class="our_services_card_img">
+              <img
+                src="./assets/images/pexels-karolina-grabowska-6627281.jpg"
+                alt=""
+              />
+            </div>
+            <h5 class="our_services_card_title">Health plans</h5>
+            <div
+              class="d-inline-flex align-items-start w-100 justify-content-between"
+            >
+              <div class="our_services_card_text">
+                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+                consectetur.
+              </div>
+              <button class="our_services_card_btn">
+                <img src="./assets/images/Icon feather-arrow-left.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="our_services_card">
+            <div class="our_services_card_img">
+              <img
+                src="./assets/images/pexels-karolina-grabowska-6627281.jpg"
+                alt=""
+              />
+            </div>
+            <h5 class="our_services_card_title">Health plans</h5>
+            <div
+              class="d-inline-flex align-items-start w-100 justify-content-between"
+            >
+              <div class="our_services_card_text">
+                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+                consectetur.
+              </div>
+              <button class="our_services_card_btn">
+                <img src="./assets/images/Icon feather-arrow-left.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card_container d-none animate__animated">
           <div class="our_services_card">
             <div class="our_services_card_img">
               <img
@@ -382,7 +477,7 @@
       </div>
     </div>
     <!-- //our partners..// -->
-    <section class="container my-5">
+    <section id="partner" class="container my-5">
       <h1 class="aboutUs_h1 text-center mt-4">
         <span class="text_green">Our</span>
         <span>Partner</span>
@@ -416,7 +511,7 @@
       </div>
     </section>
     <!-- // new request //  -->
-    <section class="New_request mt-5 py-5">
+    <section id="Appointment" class="New_request mt-5 py-5">
       <h1 class="aboutUs_h1 text-center">
         <span class="text_green">New</span>
         <span>Request</span>
@@ -564,24 +659,35 @@
           <p class="text-muted">QUICK LINKS</p>
           <ul class="nav flex-column">
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Home</a>
+              <a href="/index.html" class="nav-link p-0 text-muted">Home</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Features</a>
+              <a href="#about" class="nav-link p-0 text-muted">About Us</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+              <a href="#Services" class="nav-link p-0 text-muted">Services</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">About</a>
+              <a href="#partner" class="nav-link p-0 text-muted">our Partner</a>
             </li>
           </ul>
         </div>
 
         <div class="col-md-2 col-4 col-xs-12">
+          <p class="text-muted">CONTACT INFO</p>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="tel:+5229 0164" class="nav-link p-0 text-muted"
+                >Num: 5229 0164</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="tel:+0201" class="nav-link p-0 text-muted">Tel: 0201</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- <div class="col-md-2 col-4 col-xs-12">
           <p class="invisible">d</p>
           <ul class="nav flex-column">
             <li class="nav-item mb-2">
@@ -600,29 +706,7 @@
               <a href="#" class="nav-link p-0 text-muted">About</a>
             </li>
           </ul>
-        </div>
-
-        <div class="col-md-2 col-4 col-xs-12">
-          <p class="invisible">d</p>
-
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Home</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Features</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">About</a>
-            </li>
-          </ul>
-        </div>
+        </div> -->
       </footer>
       <h5 class="text-muted text-center fw-light" style="font-size: 1rem">
         Copyright 2022. All rights reserved.
