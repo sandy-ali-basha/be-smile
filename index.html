@@ -13,6 +13,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -108,7 +110,7 @@
       </div>
       <!-- content  -->
       <div class="row header s-vh-100">
-        <div class="col-md-6 header_text">
+        <div class="col-md-6 header_text" data-aos="fade-up">
           <h1>التأمين الذكي لحياة اكثر صحة</h1>
           <p class="text-muted">
             نحن نتحدث لغتك الأم <br />
@@ -159,7 +161,7 @@
         <span>Us</span>
         <img src="./assets/images/Group 1111.svg" alt="" />
       </h1>
-      <div class="swiper aboutUs_Swiper pt-3">
+      <div class="swiper aboutUs_Swiper pt-3" data-aos="fade-up">
         <div class="swiper-wrapper vw-100">
           <div class="swiper-slide about_us_swiper_slide">
             <div class="about_us_slide p-4">
@@ -242,14 +244,14 @@
       </div>
     </section>
     <!-- // our services // -->
-    <section id="Services" class="what_we_do container mt-5">
+    <section id="Services" class="what_we_do container mt-5" data-aos="fade-up">
       <div class="our_services_title">what we do</div>
       <h1 class="aboutUs_h1 text-center">
         <span class="text_green">Our</span>
         <span>Services</span>
         <img src="./assets/images/Group 1111.svg" alt="" />
       </h1>
-      <div class="our_services_cards mt-5">
+      <div class="our_services_cards mt-5" data-aos="fade-up">
         <div class="card_container">
           <div class="our_services_card">
             <div class="our_services_card_img">
@@ -379,7 +381,7 @@
     </section>
     <!-- //services// -->
     <div class="our_services_big container">
-      <div class="row our_services_section">
+      <div class="row our_services_section" data-aos="fade-up">
         <div class="col-md-6 our_services_big__text">
           <h1>Health <span class="text_green">plans</span>made simple</h1>
           <span class="text-muted"
@@ -427,7 +429,7 @@
           </div>
         </div>
       </div>
-      <div class="row our_services_section">
+      <div class="row our_services_section" data-aos="fade-up">
         <div class="col-md-6 our_services_big__text">
           <h1>Health <span class="text_green">plans</span>made simple</h1>
           <span class="text-muted"
@@ -484,6 +486,7 @@
         <img src="./assets/images/Group 1111.svg" alt="" />
       </h1>
       <div
+        data-aos="fade-up"
         class="d-inline-flex justify-content-center align-items-center w-100 mt-5"
       >
         <div class="our_partner_img mx-3">
@@ -519,7 +522,7 @@
       </h1>
       <h2 class="text-center fw-bold">Make an Appointment</h2>
       <form action="" class="form_container shadow mt-5">
-        <div class="my-5 container">
+        <div class="my-5 container" data-aos="fade-up">
           <div class="row px-md-5">
             <div class="col-md-6 mt-3">
               <label for="FullName" class="form-label"> Full Name </label>
@@ -720,5 +723,10 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="/assets/js/swiper.config.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
