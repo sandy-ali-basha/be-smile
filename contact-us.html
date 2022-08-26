@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/aos.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.rtl.min.css.map" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo-no-title.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>be smile</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="sticky_Nav">
+        <nav class="navbar contactNav rounded-pill navbar-expand-md">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="./assets/images/logo-no-title.png" alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon">
+                <img class="w-100" src="./assets/images/menu.png" alt="" />
+              </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+              <a href="#" class="rounded-pill btn-outline-light btn mx-2"
+                >Make an apoitment</a
+              >
+              <button
+                class="btn rounded-pill mx-2 contact_us_btn"
+                type="submit"
+              >
+                Contact Us
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </main>
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9943.351483190072!2d6.9690647!3d51.4611331!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8c3d7ad157597%3A0x7706d06fcef8dab3!2splus%20be-smile%20company!5e0!3m2!1sen!2sfr!4v1661430637368!5m2!1sen!2sfr"
+        style="border: 0"
+        allowfullscreen="flase"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <div class="contact_card">
+        <h1 class="aboutUs_h1 contact_h1">
+          <span class="text_green">Contact</span>
+          <img src="./assets/images/Group 1111.svg" alt="" />
+        </h1>
+        <div class="mt-2">
+          <label for="FullName" class="form-label"> Full Name </label>
+          <input
+            type="text"
+            id="FullName"
+            class="form-control"
+            placeholder="Your full name"
+          />
+        </div>
+        <div class="mt-2">
+          <label for="Email" class="form-label">Email</label>
+          <input
+            type="mail"
+            id="Email"
+            class="form-control"
+            placeholder="Your Email"
+          />
+        </div>
+        <div class="mt-2">
+          <label for="Message" class="form-label">Message</label>
+          <textarea
+            name="Message"
+            cols="30"
+            rows="5"
+            class="form-control"
+            placeholder="Your Email"
+          ></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="letsDescus_btn contact_submit">
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- /// loader /// -->
+    <div class="loader">
+      <div class="spinner-border text-light" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <!-- /// footer /// -->
+    <div class="container">
+      <footer class="row row-cols-5 py-5 mb-3 mt-5 border-bottom">
+        <div
+          class="mb-md-0 mb-5 col-md-6 col-12 d-flex justify-content-between flex-column align-items-start"
+        >
+          <div class="contactUs px-3 py-2">Contact Us</div>
+          <h3 class="fw-normal d-inline-flex w-md-75 w-100 align-items-end">
+            <div>info@be-smile.de</div>
+            <a class="mail" href="http://"
+              ><img src="./assets/images/mail.svg" alt=""
+            /></a>
+          </h3>
+          <div
+            class="d-inline-flex Social_footer justify-content-center mt-4 align-items-center"
+          >
+            <div class="text-muted mx-1 fw-light text-sm">Social Media</div>
+            <a
+              class="border rounded-circle bill mx-1 d-flex justify-content-center align-items-center bg-transparent p-2 footer_icon"
+              href="#"
+              ><img
+                class="w-50"
+                src="./assets/images/Icon awesome-facebook-f.svg"
+                alt=""
+            /></a>
+            <a
+              class="border rounded-circle bill mx-1 d-flex justify-content-center align-items-center bg-transparent p-2 footer_icon"
+              href="#"
+              ><img src="./assets/images/Icon awesome-twitter.svg" alt=""
+            /></a>
+            <a
+              class="border rounded-circle bill mx-1 d-flex justify-content-center align-items-center bg-transparent p-2 footer_icon"
+              href="#"
+              ><img src="./assets/images/Icon feather-instagram.svg" alt=""
+            /></a>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-4 col-xs-12">
+          <p class="text-muted">QUICK LINKS</p>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">About</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 col-4 col-xs-12">
+          <p class="invisible">d</p>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">About</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 col-4 col-xs-12">
+          <p class="invisible">d</p>
+
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">About</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <h5 class="text-muted text-center fw-light" style="font-size: 1rem">
+        Copyright 2022. All rights reserved.
+      </h5>
+    </div>
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js.map"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js.map"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/assets/js/swiper.config.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

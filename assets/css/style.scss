@@ -1,0 +1,51 @@
+@import "./breakpoints", "./colors", "../fonts/stylesheet.css", "./navbar",
+  "./Header", "./aboutUs", "./our_services", "./NewRequest", "./footer",
+  "./contactUs";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: $text_color;
+  font-family: Aileron;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: $bg_color !important;
+}
+$primary: red;
+$danger: blue;
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger,
+);
+button {
+  border: none;
+  outline: none;
+}
+.text_green {
+  color: #80cbc4;
+}
+.loader {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999999999;
+}
+.our_partner_img {
+  img {
+    width: 8vw;
+  }
+}
+.w-md-75 {
+  @include media(">=tablet") {
+    width: 75% !important;
+  }
+}

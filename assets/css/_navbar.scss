@@ -1,0 +1,66 @@
+.navbar-brand {
+  width: 4vw;
+  img {
+    width: 100%;
+  }
+  @include media("<=phone") {
+    width: 11vw;
+    padding: 0;
+  }
+}
+.sticky_Nav {
+  position: fixed;
+  z-index: 9999;
+  top: 3vh;
+  width: 90%;
+  left: 5%;
+  @include media("<=phone") {
+    top: 0px;
+    width: 100%;
+    left: 0px;
+    .navbar {
+      border-radius: 0px;
+      margin-top: 0rem;
+    }
+  }
+}
+.navbar {
+  margin-top: 1rem;
+  background: #f9fff95e;
+  backdrop-filter: blur(5px);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  border-radius: 50px;
+}
+.nav_link_active {
+  color: white !important;
+  font-weight: bold;
+  position: relative;
+  &::after {
+    content: " ";
+    width: 5px;
+    height: 5px;
+    background-color: $green_400;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+  }
+}
+.nav-link {
+  color: #ffffffb4 !important;
+}
+.contact_us_btn {
+  background: rgb(1, 77, 62);
+  background: linear-gradient(
+    238deg,
+    rgba(1, 77, 62, 0.6) 0%,
+    rgba(73, 182, 168, 0.6) 100%
+  );
+  color: white !important;
+}
+.navbar-toggler {
+  &:focus {
+    border: none !important;
+  }
+}

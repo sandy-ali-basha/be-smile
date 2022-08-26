@@ -1,0 +1,108 @@
+.aboutUs {
+  width: 100vw;
+  margin-top: 50vh;
+  padding: 1rem;
+  background-color: #80cbc380;
+  border-radius: 40px;
+  @include media("<=tablet") {
+    margin-top: 10vh;
+  }
+  .aboutUs_h1 {
+    span {
+      font-weight: 800;
+    }
+    text-align: center;
+  }
+}
+.aboutUs_Swiper {
+  width: 100vw !important;
+  left: -10vw !important;
+  @include media("<=tablet") {
+    width: auto !important;
+    left: initial !important;
+  }
+}
+.about_us_slide {
+  border-radius: 40px 40px 40px 15px;
+  background-color: #006959b6;
+  backdrop-filter: blur(10px);
+  &_h4 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  &_text {
+    color: #e0f2f1b0;
+  }
+}
+.swiper_btns {
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  @include media("<=tablet") {
+    width: 100%;
+  }
+  .swiper_button_prev {
+    background: rgb(38, 166, 153);
+    background: linear-gradient(
+      120deg,
+      rgba(38, 166, 153, 1) 0%,
+      rgba(19, 83, 77, 1) 100%
+    );
+
+    border-radius: 30px 30px 30px 10px;
+  }
+  .swiper_button_next {
+    background: rgb(0, 77, 61);
+    background: linear-gradient(
+      45deg,
+      rgba(0, 77, 61, 1) 0%,
+      rgba(0, 15, 12, 1) 100%
+    );
+    border-radius: 30px 30px 10px 30px;
+  }
+  .swiper_button {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4vw;
+    height: 4vw;
+    margin-top: 2rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: all 0.5s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    &:hover {
+      box-shadow: rgba(46, 46, 46, 0.384) 0px 8px 24px;
+      box-shadow: rgba(50, 50, 93, 0) 0px 30px 60px -12px inset,
+        rgba(0, 0, 0, 0) 0px 18px 36px -18px inset;
+      transform: scale(1.1);
+    }
+    @include media("<=phone") {
+      width: 12vw;
+      height: 12vw;
+    }
+    img {
+      width: 70%;
+      @include media("<=phone") {
+        width: auto;
+      }
+    }
+  }
+  .leftIcon {
+    transform: rotate(180deg);
+  }
+}
+
+.about_us_swiper_slide {
+  width: 29vw !important;
+  @include media("<=tablet") {
+    width: 50vw !important;
+  }
+  @include media("<=phone") {
+    width: 80vw !important;
+  }
+}

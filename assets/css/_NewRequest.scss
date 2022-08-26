@@ -1,0 +1,33 @@
+.form_container {
+  width: 70%;
+  margin: 0 auto;
+  background: #00897baf;
+  border-radius: 30px;
+  padding: 2rem;
+  input {
+    color: #ffffffc4 !important;
+    background-color: #fff0 !important;
+    box-shadow: $green_200;
+    border: 1px solid $green_200;
+    &::placeholder {
+      color: #ffffffc4 !important;
+    }
+  }
+  @include media("<=phone") {
+    width: 95%;
+  }
+}
+.form-control:focus {
+  color: $text_color !important;
+  background-color: inherit !important;
+  border-color: $green_300 !important;
+  box-shadow: 0 0 2px 0.1rem $green_300 !important;
+}
+.form-check .form-check-input {
+  float: initial !important;
+  margin-right: auto !important;
+}
+.form-check-input:checked {
+  background-color: $green_200 !important;
+  border-color: $green_100;
+}

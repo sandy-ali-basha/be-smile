@@ -1,0 +1,27 @@
+footer {
+  .footer_icon {
+    width: 40px;
+    height: 40px;
+    img {
+      width: 70%;
+    }
+  }
+  .contactUs {
+    background-color: #4db6ac8c;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+  }
+  .mail {
+    margin-left: auto;
+    img {
+      width: 50px;
+    }
+  }
+  .Social_footer {
+    @include media("<=tablet") {
+      width: 100%;
+    }
+  }
+}

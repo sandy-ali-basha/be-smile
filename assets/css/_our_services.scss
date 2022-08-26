@@ -1,0 +1,232 @@
+.what_we_do {
+  .our_services_title {
+    color: $text_color;
+    background-color: $green_400;
+    text-align: center;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    width: 15%;
+    width: 15%;
+    text-transform: uppercase;
+    @include media("<=tablet") {
+      width: auto;
+    }
+  }
+  .our_services_cards {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    .card_container {
+      display: inline-flex;
+      @include media("<=tablet") {
+        flex-wrap: wrap;
+      }
+    }
+  }
+  .our_services_card {
+    border-radius: 40px 40px 40px 10px;
+    @include media("<=tablet") {
+      width: 45%;
+    }
+    @include media("<=phone") {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    width: 100%;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    margin-top: 1rem;
+    background-color: $green_500;
+    padding: 1.5rem;
+    &_text {
+      color: #e0f2f1b4;
+      width: 80%;
+    }
+    &_img {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 40px;
+      }
+      height: 30vh;
+      margin: auto;
+    }
+    &_btn {
+      background: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 3.5vw;
+      height: 3.5vw;
+      border-radius: 25px 25px 25px 7px;
+      border: 2px solid $text_color;
+      @include media("<=tablet") {
+        width: 7vw;
+        height: 7vw;
+      }
+      @include media("<=phone") {
+        width: 11vw;
+        height: 11vw;
+      }
+    }
+    &_title {
+      margin-top: 1rem;
+    }
+  }
+}
+.viewMore_btn {
+  text-align: center;
+  margin: 0 auto;
+  border: 2px solid $text_color;
+  padding: 0.5rem 1.5rem;
+  background-color: $bg_color;
+  border-radius: 30px 30px 30px 10px;
+  position: relative;
+  &::before {
+    content: " ";
+    background-color: $bg_color;
+    width: 25px;
+    height: 20px;
+    bottom: -10px;
+    left: 10px;
+    transition: all 1s;
+    position: absolute;
+  }
+  transition: all 2s;
+}
+
+.our_services_big__images {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .img_div {
+    position: absolute;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .image_1 {
+    width: 15vw;
+    height: 15vw;
+    bottom: 0px;
+    left: 20px;
+    img {
+      border-radius: 40px 10px 40px 40px;
+    }
+    @include media("<=tablet") {
+      display: none;
+    }
+  }
+  .image_2 {
+    right: 10px;
+    width: 6vw;
+    height: 6vw;
+    top: 10px;
+    img {
+      border-radius: 40px 10px 40px 40px;
+    }
+    @include media("<=tablet") {
+      display: none;
+    }
+  }
+  .image_3 {
+    left: 110px;
+    width: 14vw;
+    height: 14vw;
+    top: 33px;
+    img {
+      border-radius: 40px 40px 40px 10px;
+    }
+    @include media("<=tablet") {
+      display: none;
+    }
+  }
+  .image_4 {
+    width: 14vw;
+    height: 14vw;
+    bottom: 60px;
+    right: 50px;
+    img {
+      border-radius: 40px 40px 10px 40px;
+    }
+    @include media("<=tablet") {
+      width: 80vw;
+      height: 40vh;
+      position: relative;
+      margin: auto;
+      top: 0px;
+      left: 0px;
+    }
+  }
+  .bg {
+    width: 75%;
+    height: 65%;
+    background-color: #80cbc385;
+    border-radius: 40px;
+    @include media("<=tablet") {
+      display: none;
+    }
+  }
+}
+.our_services_big__text {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  @include media("<=phone") {
+    height: 35vh;
+  }
+  h1 {
+    margin-bottom: 5vh;
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+}
+.letsDescus_btn {
+  background: $green_400;
+  color: white;
+  text-decoration: none;
+  width: 26%;
+  padding: 10px 20px;
+  border-radius: 20px 20px 20px 5px;
+  margin-top: 5vh;
+  font-weight: 400;
+  &:hover {
+    color: white;
+  }
+  @include media("<=phone") {
+    width: auto;
+  }
+}
+.our_services_section {
+  margin-top: 10vh !important;
+  @include media("<=phone") {
+    text-align: center;
+  }
+  &:nth-child(2) {
+    flex-direction: row-reverse;
+    text-align: end;
+    @include media("<=phone") {
+      text-align: center;
+    }
+    .our_services_big__text {
+      align-items: flex-end;
+      @include media("<=phone") {
+        align-items: center;
+      }
+    }
+  }
+}
+.New_request {
+  background-color: #80cbc3b6;
+}
